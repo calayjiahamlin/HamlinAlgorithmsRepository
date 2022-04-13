@@ -19,15 +19,14 @@
         OUTPUT: Maximum element of A
 
         arrayMax(A, N) {
-            currentMax = A[0]; (            *assignment statement = 1; array access = 1; = 2 ops
-            for (i = 1; i < N; i++) {       *assignment statement = 1; less than comparison = N; increment = N - 1; = 2N
-                if (A[i] > currentMax) {    *array access = N - 1; greater than comparison = N - 1; = 2N - 2
-                    currentMax = A[i];      *assignment statement = N - 1; array access = N - 1; = 2N - 2
+            currentMax = A[0]; (            *assignment statement = 1; array access = 1
+            for (i = 1; i < N; i++) {       *assignment statement = 1; less than comparison = N + 1; increment = N
+                if (A[i] > currentMax) {    *array access = N; greater than comparison = N
+                    currentMax = A[i];      *assignment statement = N; array access = N;
                 }
             }
             return currentMax;              *return statement = 1
         }                                   Total instructions: 1 + 1 + 1 + N + 1 + N + N + N + N + N = 6N + 4
-                                            Correction: 2 + 2N + 2N - 2 + 2N - 2 + 1 = 6N - 1 total ops
 
 3. Implementing the Russian Peasant's Algorithm and Verifying its Correctness
     *completed in the RussianPeasantsAlgorithm.java
@@ -40,4 +39,4 @@
     250             700             9 milliseconds
     1240            1658            10 milliseconds
     10000           16400           6 milliseconds
-    134000          645000          7 milliseconds
+    134000          645000          

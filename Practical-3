@@ -1,0 +1,89 @@
+1. Order of Growth Classifications
+    Exercise 1
+        1. Algorithms with time complexities such as n and 100n are called (Linear) algorithms.
+        2. Algorithms with time complexities such as n^2 are called quadratic-time algorithms. (True)
+        3. Any quadratic-time algorithm is eventually more efficient than any linear-time algorithm. (False)
+        4. Functions such as 5n^2 and 5n^2 + 100 are called (Quadratic/Polynomial) functions.
+
+    Exercise 2
+        T(N)                Growth Function         1. Constant
+        n^2                   5                     2. Logarithmic
+        480                   1                     3. Linear
+        2^n                   7                     4. Linearithmic
+        log(n)                2                     5. Quadratic
+        2^4                   2                     6. Polynomial
+        380N                  3                     7. Exponential
+        1/2N                  3
+
+        n log()               2
+        n^4                   6
+        2^n                   7
+        log8n                 2
+        n log4n               4
+        log2n                 2
+        n log6n               4
+        300                   1
+        6n^3                  6
+                    constant       linear       polynomial      exponential
+        1               x
+        2n^3                                        x
+        (4/3)n                        x
+        2^n                                                          x
+        4n^2                                        x
+        5600            x
+        2493n                         x
+        3/2^n                                                        x
+
+2. Simplify Functions
+    Exercise 1
+        1. f(n) = 5n +12            is O(n)
+        2. f(n) = 109               is O(109)
+        3. f(n) = n^2 + 3n + 112    is O(n^2)
+        4. f(n) = n^3 1999n +1337   is O(n^3)
+
+3. Complexity Analysis of Functions
+    Exercise 1: For each of the following code snippets indicate what the complexity is:
+
+        Code snippet 1 -> O(n^2)
+        Code snippet 2 -> O(1)
+        Code snippet 3 -> O(n)
+        Code snippet 4 -> O(n)
+        Code snippet 5 -> O(n)
+        Code snippet 6 -> O(1)
+        Code snippet 7 -> O(n^2)
+        Code snippet 8 -> O(n)
+
+4. Big-O Notation
+    Exercise 1: Show that 8n + 5 is O(n)
+                f(n) = 8n + 5
+                f(n)≤cg(n) ∀ n≥n0
+
+        f(n) = 8n + 5 <= c*g(n)
+        Let's try C = 9
+        8n + 5 <= 9n
+        5 <= 9n - 8n
+        5 = n
+
+        f(n) <= 9g(n) ∀ n >= 5
+
+        I chose C=9 but we could choose any real number >= 9 and any integer greater
+        than or equal to 5 works for n.
+
+    5. Comparing Complexities
+        The time complexity of threeSumA is O(n^3)
+        The time complexity of threeSumB is O(n^2)
+
+        Results below of Test Run of both algorithms based on time duration
+                    threeSumA algorithm         threeSumB algorithm
+        1K File     299 in milliseconds         35 in milliseconds
+
+        2K File     1845 in milliseconds        68 in milliseconds
+
+        4K File     10929 in milliseconds       255 in milliseconds
+
+        8K File     87827 in milliseconds       1032 in milliseconds
+
+        16K File    693069 in milliseconds      4462 in milliseconds
+
+        Graph plot as pdf in done in excel
+
