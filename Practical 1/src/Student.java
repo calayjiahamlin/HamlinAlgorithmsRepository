@@ -2,12 +2,12 @@ public class Student {
     String name;
     String studentNumber;
 
-    Student(){
+    Student(){ //constructor
         name = "";
         studentNumber = "";
     }
 
-    //Override
+    //Override toString() method to print according to instructions
     @Override
     public String toString() {
         return "Name:  " + name + "\n" +

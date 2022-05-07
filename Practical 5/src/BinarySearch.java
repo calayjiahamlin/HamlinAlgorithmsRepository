@@ -160,19 +160,3 @@ public class BinarySearch {
     }
 }
 
-/**
- *
-
-class StringSortLex implements Comparator<String> {
-
-    /**
-     *
-     * @param one
-     * @param two
-     * @return
-
-    public int compare(String one, String two) {
-        return one.compareTo(two);
-    }
-}
-*/

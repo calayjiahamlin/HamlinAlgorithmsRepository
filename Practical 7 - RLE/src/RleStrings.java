@@ -1,4 +1,10 @@
 public class RleStrings {
+
+    /**
+     *
+     * @param input: the string that will be compressed based on RLE
+     * @return will return the compressed RLE of the input string
+     */
     public static String printRLE(final String input){
 
         int n = input.length();
